@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="JQuery.js">
+		
+	</script>
+</head>
+<body>
+	<div>
+		<span>
+		<p class="p1">HII BABE</p>
+		</span>
+		<ul>
+			<li>Siva</li>
+			<li>Sai</li>
+		</ul>
+	</div>
+	<button id="button">click here</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				// var s=$(".p1").parentsUntil("div").text();
+				// alert(s);
+			$("ul").detach();
+			})
+		})		
+	</script>
+</body>
+</html>

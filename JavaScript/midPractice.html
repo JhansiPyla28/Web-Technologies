@@ -1,0 +1,200 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Practice
+	</title>
+</head>
+<body>
+	<p id="mid2">Examples</p>
+	<script type="text/javascript">
+		// var numbers = [45, 4, 9, 16, 25];
+		// var txt = "";
+		// for (var x in numbers) {
+		//   txt += numbers[x] + "<br>"; 
+		// }
+		// document.getElementById("mid2").innerHTML = txt;
+		// function mul(p1,p2){
+		// 	document.write(p1*p2)
+		// }
+		// mul(2,3);
+		var mynum=["Jan","siv"];
+		var num=["jhnu","siva"];
+		var nums=mynum.concat(num);
+		document.getElementById("mid2").innerHTML=nums;
+	</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			background-color: yellow;
+			width: 500px;
+		}
+	</style>
+	
+</head>
+<body>
+      <center><div>
+      	<form action="/jk.php" method="post" onsubmit="return validate();">
+      	<table>
+      		<h1>Registration Form</h1>
+      		<tr><td>Password:</td><td><input type="password" name="n" id="first">*<label id="l" style="color:red;visibility: hidden;">Invalid Data!!!</label></td></tr>
+      		<tr><td>Second Name:</td><td><input type="text"  id="second"></td></tr>
+      		<tr><td>Mobile:</td><td><input type="number"  id="mobile"></td></tr>
+      		<tr><td>Branch:</td><td>CSE<input type="checkbox"  id="c1">ECE<input type="checkbox"  id="c2">MEC<input type="checkbox"  id="c3"></td></tr>
+            <tr><td>Show Password:</td><td><input type="checkbox" id="s" onclick="sp();"></td></tr>
+      		<tr><td></td><td><input type="submit" name="s" value="Register"></td></tr>
+      	</table>
+      </form>
+      </div>
+  </center>
+  <img src="img2.jpg" width="100" height="100" id="i" onmouseover="change();" onmouseout="unchange();">
+  <script type="text/javascript">
+		function validate(){
+			var fn=document.getElementById("first").value;
+			// var sn=document.getElementById("second").value;
+			// var mn=document.getElementById("mobile").value;
+			// var c1=document.getElementById("c1").checked;
+			if(fn.length<4)
+			{
+				// alert("invalid");
+				document.getElementById("first").style.border="5px solid red";
+				document.getElementById("l").style.visibility="visible";
+				return false;
+			}
+			// || sn.length<4 || mn.length!=10
+			// if(!c1)
+			// {
+			// 	return false;
+			// }
+			// else{
+			// 	return true;
+			// }
+		}
+		function sp(){
+			var s1=document.getElementById("s").checked;
+			if(s1)
+			{
+                document.getElementById("first").type="text";
+			}
+			else{
+				document.getElementById("first").type="password";
+			}
+		}
+		function change()
+		{
+			document.getElementById("i").src="img1.jpg";
+		}
+		function unchange()
+		{
+			document.getElementById("i").src="img2.jpg";
+		}
+	</script>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			background-color: yellow;
+			width: 500px;
+		}
+	</style>
+	<script type="text/javascript">
+		function validate(){
+			var fn=document.getElementById("first").value;
+			// var sn=document.getElementById("second").value;
+			// var mn=document.getElementById("mobile").value;
+			// var c1=document.getElementById("c1").checked;
+			if(fn.length<4)
+			{
+				// alert("invalid");
+				document.getElementById("first").style.border="5px solid red";
+				document.getElementById("l").style.visibility="visible";
+				return false;
+			}
+			// || sn.length<4 || mn.length!=10
+			// if(!c1)
+			// {
+			// 	return false;
+			// }
+			// else{
+			// 	return true;
+			// }
+		}
+		function sp(){
+			var s1=document.getElementById("s").checked;
+			if(s1)
+			{
+                document.getElementById("first").type="text";
+			}
+			else{
+				document.getElementById("first").type="password";
+			}
+		}
+		function change()
+		{
+			document.getElementById("i").src="img1.jpg";
+		}
+		function unchange()
+		{
+			document.getElementById("i").src="img2.jpg";
+		}
+		function cc()
+		{
+			document.getElementById("i").style.border="5px solid red";
+		}
+		function display()
+		{
+			var v=document.getElementById("first").value;
+			// document.getElementById("first").value=document.getElementById("first").value.toUpperCase();
+		    document.getElementById("p").innerHTML=v;	
+		}
+		function bc()
+		{
+			document.getElementById("first").style.backgroundColor='pink';
+		}
+		function l()
+		{
+			alert("Dont resize me!!!");
+		}
+	</script>
+</head>
+<body>
+      <center><div>
+      	<form action="/jk.php" method="post" onsubmit="return validate();">
+      	<table>
+      		<h1>Registration Form</h1>
+      		<tr><td>Password:</td><td><input type="password" name="n" id="first">*<label id="l" style="color:red;visibility: hidden;">Invalid Data!!!</label></td></tr>
+      		<!-- <tr><td>Second Name:</td><td><input type="text"  id="second"></td></tr>
+      		<tr><td>Mobile:</td><td><input type="number"  id="mobile"></td></tr>
+      		<tr><td>Branch:</td><td>CSE<input type="checkbox"  id="c1">ECE<input type="checkbox"  id="c2">MEC<input type="checkbox"  id="c3"></td></tr> -->
+            	<tr><td>Show Password:</td><td><input type="checkbox" id="s"  ></td></tr>
+      		<tr><td></td><td><input type="submit" name="s" value="Register"></td></tr>
+      	</table>
+      </form>
+      </div>
+  </center>
+  <img src="img2.jpg" id="i" width="100" height="100" onmouseover="change();" onmouseout="unchange();" >
+  <p id="p">Diplayed Text Here</p>
+  <script type="text/javascript">
+  	var c=document.getElementById("s");
+  	c.addEventListener('click',sp);
+  	c.addEventListener('click',cc);
+  	var d=document.getElementById("first");
+  	d.addEventListener('focus',display);
+  	d.addEventListener('focus',bc);
+  	d.addEventListener('blur',validate);
+  	window.addEventListener('resize',l);
+  </script>
+</body>
+</html>

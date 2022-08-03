@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		JQuery Effects
+	</title>
+	<script type="text/javascript" src="JQuery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- // $(document).ready(function(){
+		// 	$("#j").hide(5000,function(){
+		// 		alert("Done");
+		// 	});
+		// 	$("#j").show(5000,function(){
+		// 		alert("Done");
+		// 	});
+		// })
+		// $(document).ready(function(){
+		// 	$("#fo").click(function(){
+		// 		$("#box").slideUp(1000,function(){
+		// 			$("#fo").text("Fade out completed");
+		// 			alert("Completed");
+		// 		});
+		// 	})
+		// 	$("#ft").click(function(){
+		// 		$("#box").slideDown(1000,0.5,function(){
+		// 			$("#ft").text("Fade To completed");
+		// 			alert("Completed");
+		// 		});
+		// 	})
+		// }) -->
+		<style type="text/css">
+			.bubble,.bubble1,.bubble2,.bubble3,.bubble4,.bubble5
+			{
+				float: left;
+				width: 100px;
+				height: 100px;
+				border-radius: 100px;
+				position: relative;
+			}
+			.bubble6,.bubble7,.bubble8,.bubble9
+			{
+				float: right;
+				width: 100px;
+				height: 100px;
+				border-radius: 100px;
+				position: relative;
+			}
+		</style>
+</head>
+<body>
+	<!-- <h1 id="j">Jhansi Pyla</h1> -->
+	<button id="start">START</button>
+	<div class="bubble" style="background-color: red;"></div>
+	<div class="bubble1" style="background-color: violet;"></div>
+	<div class="bubble2" style="background-color: cyan;"></div>
+	<div class="bubble3" style="background-color: black;"></div>
+	<div class="bubble4" style="background-color: goldenrod;"></div>
+	<div class="bubble5" style="background-color: indigo;"></div>
+	<div class="bubble6" style="background-color: yellow;"></div>
+	<div class="bubble7" style="background-color: lightpink;"></div>
+	<div class="bubble8" style="background-color: gray;"></div>
+	<div class="bubble9" style="background-color: wheat;"></div>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#start").click(function(){
+				var b=$(".bubble");
+				b.animate({left:300},3000);
+				b.animate({top:300},5000);
+				b.animate({left:0,top:500},4000);
+				b.animate({left:0,top:0},100);
+				var b1=$(".bubble1");
+				// $(.bubble).css("background-color","red");
+				b1.animate({left:800},400);
+				b1.animate({top:30},500);
+				b1.animate({left:-10,top:300},4000);
+				b1.animate({left:0,top:0},1000);
+				var b2=$(".bubble2");
+				b2.animate({left:1000},3000);
+				b2.animate({top:300},5000);
+				b2.animate({left:0,top:300},4000);
+				b2.animate({left:0,top:0},100);
+				var b3=$(".bubble3");
+				b3.animate({left:1200},3000);
+				b3.animate({top:300},5000);
+				b3.animate({left:-100,top:0},4000);
+				b3.animate({left:0,top:0},100);
+				var b4=$(".bubble4");
+				b4.animate({left:1250},300);
+				b4.animate({top:300},5000);
+				b4.animate({left:0,top:0},4000);
+				b4.animate({left:0,top:0},1000);
+				var b5=$(".bubble5");
+				b5.animate({right:1000},3000);
+				b5.animate({top:300},5000);
+				b5.animate({left:0,top:300},4000);
+				b5.animate({left:0,top:0},1000);
+				var b6=$(".bubble6");
+				b6.animate({right:0},300);
+				b6.animate({top:490},500);
+				b6.animate({left:0,top:500},4000);
+				b6.animate({left:0,top:0},100);
+				var b7=$(".bubble7");
+				b7.animate({right:1000},3000);
+				b7.animate({top:308},500);
+				b7.animate({left:0,top:600},4000);
+				b7.animate({left:0,top:0},1000);
+				var b8=$(".bubble8");
+				b8.animate({top:600},3000);
+				b8.animate({top:390},5000);
+				b8.animate({left:0,top:700},4000);
+				b8.animate({left:0,top:0},1000);
+				var b9=$(".bubble9");
+				b9.animate({right:100},3000);
+				b9.animate({top:300},5000);
+				b9.animate({left:0,top:300},4000);
+				b9.animate({left:0,top:0},1000);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	<style type="text/css">
+		body{
+			color: white;
+		}
+		div{
+			width: 90%;
+			background-color: black;
+			border: 1px solid black;
+			border-radius: 20px;
+		}
+		input[type=text],input[type=password],input[type=number],input[type=email],input[type=date]{
+			padding: 4px;
+			border: 1px solid white;
+			width: 100%;
+		}
+		.lab{
+			font-size: 20px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<div>
+			<center>
+			<form action="#" method="post" onsubmit="return validate();">
+				<table>
+					<h1 style="color:white;">Registration Form</h1>
+					<tr><td class="lab">FirstName:</td><td><input title="Enter your name" type="text" id="first" class="name" name="f" ></td></tr>	
+ 					<tr><td class="lab">LastName:</td><td><input type="text" id="last" name="l" class="name" ></td></tr>
+ 					<tr><td class="lab">MiddleName:</td><td><input type="text" id="middle" name="m"></td><label id="mid" style="visibility: hidden; color: red;">Name is invalid somewhere please check...</label></tr>
+ 					<tr><td class="lab">FullName:</td><td><input type="text" readonly id="full" name="FN" value=" "></td></tr>
+ 					<tr><td class="lab">Country:</td><td><select id="country">
+ 						<option>India</option>
+ 						<option>USA</option>
+ 					</select></td></tr>
+ 					<tr><td class="lab">Mobile:</td><td><input type="text" id="mobile"  name="m"></td></tr>
+ 					<tr><td><td id="mb" style="visibility: hidden; color: red;">Please enter valid number</td></td></tr>
+ 					<tr><td class="lab">Password:</td><td><input type="password" id="password"  name="p"></td><td></td><td><label id="psd" style="visibility: hidden; color: red;">Password should<br> contain an Uppercase,<br>a Lowercase,a number <br>and a special character</label></td></tr>
+ 					<tr><td class="lab">Show Password:<input type="checkbox" name="cb" id="show" onclick="showPassword();"></td></tr>
+					<tr><td class="lab">Hobbies:</td><td class="lab">Eating<input type="checkbox" id="c1" name="">Sleeping<input type="checkbox" id="c2" name="">Studying<input type="checkbox" id="c3" name=""></td></tr>
+					<tr><td class="lab">Email:</td><td><input type="text" id="email"  name=""></td></tr>
+					<tr><td class="lab">DateOfBirth:</td><td><input type="date" id="birth" name="d" ></td></tr>
+					<tr><td></td><td><input type="button" name="" value="Click to check your age" onclick="age();"></td></tr>
+					<tr><td><td id="displayAge"></td></td></tr>
+					<tr><td class="lab">Passport Photo:</td><td><input type="file" name="" onchange="sizeCheck();" required id="photo"></td></tr>
+					<tr><td class="lab">Address:</td><td><textarea rows="8" cols="40"></textarea></td></tr>
+					<tr><td class="lab">I agree to the terms of the company:<input type="checkbox" name="cb" id="rule" onclick="agree();"></td></tr>
+					<tr><td></td><td><input type="reset" id="rst" name=""></td></tr>
+					<tr><td></td><td><input type="submit" name="s" value="Submit"></td></tr>
+					
+				</table>
+			</form>
+			</center>
+		</div>
+		
+			<section>
+				<h1 style="color:black;">Form Data</h1>
+				<h2 id="p" style="color:black;"></h2>
+				<h2 id="p1" style="color:black;"></h2>
+				<h2 id="p2" style="color:black;"></h2>
+				<h2 id="p3" style="color:black;"></h2>
+			</section>
+		
+	</center>
+	<script type="text/javascript" src="formvalid.js">
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN PAGE</title>
+	<style type="text/css">
+		.bold{
+			font-weight: bold;
+		}
+		button {
+			background-color: #04AA6D;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			border-radius: 10px;
+		}
+		input[type=text], input[type=password], input[type=number] {
+			width: 400px;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: 1px solid #ccc;
+		}
+		.right{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<center>
+		<h1><u>Student Login Page</u></h1><img src="account.png" width="100px" height="100px" style="display: block;"><br>
+		<div>
+			<table>
+				<form action="janu.php" method="set" onsubmit="return validate();">
+					
+					<tr><td class="bold">Username:</td>
+					<td><input placeholder="Enter your ID" type="text" id="idnum" required></td></tr>
+					<tr><td id="idn" style="display:none; color: red;">Invalid ID Number...Please try agian</td></tr>	
+ 					<tr><td class="bold">Password:</td>
+ 					<td><input type="password" placeholder="Enter your password" id="password" required></td></tr>
+ 					<tr><td class="bold">Re enter Password:</td>
+ 					<td><input type="password" placeholder="Enter your password" id="password1" required></td></tr>
+ 					<tr><td id="psd" style="display:none; color: red;">Password is not matched</td></tr>
+ 					<tr><td class="bold">Phone number</td><td><input type="number" id="phnum" placeholder="Enter your Phone number" required name=""></td></tr>
+ 					<tr><td id="num" style="display:none; color: red;">Phone number is invalid</td></tr>
+ 					<tr><td><button class="submit" type="submit">LOGIN</button></td></tr>
+ 					<tr><td class="right"><a href="#">Forgot password</a></td></tr>
+ 				</form>
+ 			</table>
+		</div>
+	</center>
+	<script type="text/javascript">
+		var re=/^(N180|n180|n181|N181)\d{3}$/;
+		function idNumber(){
+			var idnum=document.getElementById("idnum").value;
+			if(re.test(idnum)){
+				return true;
+			}
+			else{
+				document.getElementById("idn").style.display="block";
+				document.getElementById("idnum").style.borderColor="red";
+				return false;
+			}
+		}
+		var pass1=document.getElementById("password").value;
+		var pass2=document.getElementById("password2").value;
+		function password(){
+			if(pass1==pass2){
+				return true
+			}
+			else{
+				document.getElementById("password").borderColor="red";
+				document.getElementById("psd").display="block";
+				return false;
+			}
+		}
+		function mobile(){
+			var number=document.getElementById("phnum").value;
+			var re=/^[7-9]\d{9}$/;
+			if(re.test(number)){
+				return true;
+			}
+			else{
+				document.getElementById("phnum").borderColor="red";
+				document.getElementById("num").display="block";
+				return false
+			}
+		}
+		function validate(){
+			var res1=idNumber();
+			var res2=password();
+			var res3=mobile();
+			return(res1&&res2&&res3);
+		}
+	</script>
+</body>
+</html>

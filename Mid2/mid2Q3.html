@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3</title>
+</head>
+<body>
+	Age:<input type="number" id="age" placeholder="Enter your age" name="">
+	<input type="submit" value="Submit" onsubmit="validate();" name="">
+	<script type="text/javascript">
+		function validate(){
+			var age=document.getElementById("age").value;
+			switch(age){
+				case (age<10):
+					alert("You are still 10");
+					break;
+				case (age>10):
+					alert("OK");
+					break;
+				default:
+					alert("NO");
+			}
+		}
+	</script>
+</body>
+</html>

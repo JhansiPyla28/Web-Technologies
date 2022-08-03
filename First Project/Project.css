@@ -1,0 +1,159 @@
+body{
+	background-color: #19202e;
+	width: 99%;
+	height: 4000px;
+}
+.exchange{
+	font-family: sans-serif;
+	font-size: 150%;
+}
+.image{
+	float: left;
+	display: inline;
+}
+header{
+	width: 100%;
+
+}
+hgroup{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+ul{
+	display: inline;
+	top: 0px;
+	/*right: 500px;*/
+}
+li{
+	list-style-type: none;
+	display: inline;
+	margin-right: 1%;
+	font-size: 15px;
+	font-weight: bold;
+	font-family:sans-serif;
+}
+a{
+	text-decoration: none;
+	display: inline;
+	color: silver;
+}
+.login{
+	border: 1px solid royalblue;
+	padding: 1% 2%;
+	border-radius: 5px;
+	/*color: white;*/
+}
+.signup{
+	border: 1px solid royalblue;
+	padding: 1% 2%;
+	border-radius: 5px;
+	background-color: royalblue;
+}
+.t{
+	margin-left: 20%;
+}
+.image1{
+	margin-left:4%;
+}
+.image2{
+	margin-left: 2%;
+}
+h6{
+	border:1px solid royalblue; 
+	background-color: royalblue; 
+	display: inline; 
+	border-radius: 3px; 
+	padding: 2px; 
+	font-size: 8px;
+	color: white;
+}
+.sidebar{
+	background-color:#18202e ;
+	line-height: 60px;
+	width: 50%;
+	margin-left: 7%;
+	margin-top: 6%;
+	float: left;
+	font-size: 300%;
+	/*color: white;*/
+	font-family: sans-serif;
+	display: inline;
+}
+.invest{
+	border: 1px solid royalblue;
+	background-color: royalblue;
+	font-size: 20px;
+	color: white;
+	padding: 2% 12%;
+	border-radius: 10px;
+}
+.section{
+	/*width: 30%;*/
+	margin-top: -1%;
+	margin-right: 0px;
+	float: right;
+}
+#cryptoFees{
+	background-color: rgb(24,25,40,0.1);
+	top: 575px;
+	/*margin-top: 38%;*/
+	width: 80%;
+	margin-left: 10%;
+	font-family: sans-serif;
+	font-size: 40px;
+	/*border: 1px solid silver;*/
+	color: white;
+	position: absolute;
+}
+#trade{
+	background-color: royalblue;
+	padding: 1% 6%;
+	color: white;
+	font-size: 20px;
+	border: 1px solid  royalblue;
+	border-radius: 5px;
+	margin-top: 3%;
+}
+.right{
+	margin-top: -9%;
+	margin-left: 30%;
+	color: white;
+	float: right;
+	/*border: 1px solid black;*/
+	width: 50%;
+	height: auto;
+}
+.caption{
+	color: silver;
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-top: -4%;
+	margin-bottom: 7%;
+}
+.s1{
+	font-size: 25px;
+	display: inline;
+	font-family: sans-serif;
+	margin-bottom: 10%;
+}
+.i1{
+	display: inline;
+	border-radius: 5px;
+	margin-left: 80%;
+	margin-top: -4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

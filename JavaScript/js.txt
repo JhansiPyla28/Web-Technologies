@@ -1,0 +1,98 @@
+HTML:design webpages
+Static webpage:content is same
+Dynamic webpage:content is change
+
+CSS:Look and feel
+
+Java Script: Scripting language-interactive webpages-mouse click,scroll etc
+
+High level language-More abstraction-memory etc , interpreted language
+Compiler interpreted language
+Interpreted--Line by line(Performense problem)(JIT-provide byte code)
+
+1995- Bremdon eich has invented this language-Initially live script and then converted into javascript
+
+ECMA script(European community Machine Association) script principles
+
+ES1
+
+We are following ES6 version rules
+
+We can execute at clent side or server side
+
+Problem in client side:-If the js is executed in client side usser may disable js code in your browser
+
+To overcome this we execute out js in server side
+
+In server side--> PHP,nodejs,etc
+
+With help of js i can create webpages,webapplications, smart watches-Pebble, mobile applications-native react js
+
+We can define any kind of form validations,DOM manipulatioons
+
+Hoe to wrte code:
+Internal JS:
+	<script type="text/javascript">
+
+		//block of js
+
+	</script>
+style tag we can write only in head 
+script can use in head and body too
+External JS:
+------------------------------------------------
+
+Identifiers:
+Variables: 3 ways
+1)Var: funtion scope, 
+2)Let: properly used
+3)Cons
+
+	JS is loosely typed language(no need to mention what type of data that user is given)
+
+typeof() to find type
+
+Datatypes
+
+1)String:
+declaring strings
+var j="janu";
+var s="siva";
+
+concatenate two strings
+
+console.log("hi"+"js"+"wecome");
+j.tolowercase()
+j.toupper()
+j.split(" ";)
+2)Object
+	let k={a:"hai",b:2345};
+	Var car={color:"blue",name:"ambassdor"}
+3)Number
+4)Null
+5)Boolean etc
+----------------------------------------
+
+Operators:
+
+Arithematic operta
+
+Design a game to check the luck of the user how many times
+
+Procedure:
+Accept a number from the user and check whether this number is matched to the randomly generated number (>10 <100)
+
+This process should be repated until he feels bored
+
+if he selct bored option then it should shows how lucky he is 
+
+
+
+
+
+
+
+
+
+
+
