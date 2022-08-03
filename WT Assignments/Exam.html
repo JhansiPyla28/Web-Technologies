@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXAM</title>
+	<style type="text/css">
+		body{
+			margin-top: 20px;
+			caret-color: yellow;
+		}
+		#main-head{
+			border: 2px solid black;
+			padding: 20px 100px;
+			border-radius: 10px;
+			background-color: steelblue;
+		}
+		#heading{
+			display: inline;
+			color: white;
+		}
+		#sub-head{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<b id="main-head" onmouseover="change();" onmouseout="unchange();"><h1 id="heading"><u>F1H20</u></h1><small id="sub-head">RGUKT</small></b><br><br><br>
+		<form action="success.html" onsubmit="return validate();">
+			<table>
+				<tr><td>Mobile:<input type="text" id="mobile"  name="m"></td></tr>
+				<tr><td>Email:<input type="text" id="email"  name=""></td></tr>
+ 				<tr><td><input type="submit" name=""></td></tr>
+			</table>
+		</form>
+	</center>
+	<script type="text/javascript">
+		function change(){
+			document.getElementById("main-head").style.backgroundColor="green";
+			document.getElementById("heading").style.color="yellow";
+			document.getElementById("sub-head").style.color="yellow";
+		}
+		function unchange(){
+			document.getElementById("main-head").style.backgroundColor="steelblue";
+			document.getElementById("heading").style.color="white";
+			document.getElementById("sub-head").style.color="red";
+		}
+		function Mobile()
+		{
+			var mnum=document.getElementById("mobile").value;
+			var p1=/^(977)[0-9]{7}$/;
+			var p2=/^[0-9]{4}\-[0-9]{4}\-[0-9]{4}$/;
+			if(p1.test(mnum)||p2.test(mnum))
+			{
+				return true;
+			}
+			else
+			{
+				document.getElementById("mobile").style.borderColor="red";
+				return false;
+			}
+		}
+		
+		function validateEmail()
+		{
+			var email=document.getElementById("email").value;
+			var pat=/^[a-z,A-Z,0-9][a-z,A-Z,0-9,_,.]*@[a-z]{3,7}\.[a-z]{2,3}(\.[a-z]{2,3})*$/;
+			if(pat.test(email))
+			{
+				return true;
+			}
+			else
+			{
+				document.getElementById("email").style.borderColor="red";
+				return false;
+			}
+		}
+		function validate(){
+			var res1=Mobile();
+			var res2=validateEmail();
+			return(res1&&res2);
+		}
+	</script>
+</body>
+</html>

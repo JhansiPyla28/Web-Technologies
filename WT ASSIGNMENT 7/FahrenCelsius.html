@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FahrenCelsius</title>
+</head>
+<body>
+	<p>
+		Temperature in Fahrenheit:<input type="number" placeholder="Your temperature" id="fahrenheit" onchange="celsius();" name="">
+	</p>
+	<p id="result1" style="display:none"></p>
+	<p>
+		Temperature in Celsius:<input type="number" placeholder="Your temperature" id="celsius" onchange="fahrenheit();" name="">
+	</p>
+	<p id="result2" style="display:none"></p>
+	<script type="text/javascript">
+		function celsius() 
+		{
+			var inp=document.getElementById("fahrenheit").value;
+			var fahrToCel=(inp-32)*5/9;
+			var op=inp+'\xB0F is ' + fahrToCel + ' \xB0C';
+			document.getElementById("result1").style.display="block";
+			document.getElementById("result1").innerText=op;
+		}
+		function fahrenheit(){
+			var inp=document.getElementById("celsius").value;
+			var celToFahr=inp * 9 / 5 + 32;
+			var op=inp+'\xB0C is ' +celToFahr +'\xB0F';
+			document.getElementById("result2").style.display="block";
+			document.getElementById("result2").innerText=op; 
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Form</title>
+	<link rel="icon" type="text/css" href="rgukt.png">
+	<style type="text/css">
+		body{
+			margin: 20px;
+		}
+
+		input[type=text],input[type=password],input[type=number],input[type=email],input[type=date],textarea{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+		}
+		.lab{	
+			font-weight: bold;
+		}
+		.button {
+			background-color: #04AA6D;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		#form{
+			border: 1px solid #ccc;
+			width: 700px;
+			padding-top: 30px;
+			/*padding-right: 40px;*/
+			background-color: whitesmoke;
+			border-radius: 50px;
+		}
+		tr{
+			padding: 3px;
+		}
+		body{
+			background-image: url("1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			caret-color: yellow;
+		}
+		#main-head{
+			border: 2px solid black;
+			padding: 20px 100px;
+			border-radius: 10px;
+			background-color: steelblue;
+		}
+		#heading{
+			display: inline;
+			color: white;
+		}
+		#sub-head{
+			color: red;
+		}
+	</style>
+</head>
+<body >
+	<div>
+		<center>
+		<form action="success.html" method="post" onsubmit="return validate();" id="form">
+			<b id="main-head" onmouseover="change();" onmouseout="unchange();"><h1 id="heading"><u>F1H20</u></h1><small id="sub-head">RGUKT</small></b><br><br><br>
+			<table>
+				<tr><td class="lab">Username:</td></tr>
+				<tr><td><input title="Enter your name" onkeyup="LtoU()" type="text" id="first" class="name" name="f" placeholder="Enter your Username"></td></tr>
+				<tr><td id="namee" style="display:none; color:red">Name should start with F and length of >3 and <=9</td></tr>	
+				</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+ 				<tr><td class="lab">Email:</td></tr>
+				<tr><td><input type="text" id="email" placeholder="Enter your emial ID"  name=""></td></tr>
+				<tr><td id="mail" style="display:none; color:red">Please Enter valid mail ID</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+ 				<tr><td class="lab">Mobile Number:</td></tr>
+ 				<tr><td><input type="text" id="mobile"  name="m" placeholder="Enter your Mobile Number"></td></tr>
+ 				<tr><td id="mb" style="display: none; color: red;">Please enter valid number</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+ 				<tr><td class="lab">Country:
+ 					<select id="country">
+ 						<option>India</option>
+ 						<option>America</option>
+ 						<option>England</option>
+ 						<option>Germany</option>
+ 						<option>firm representatives of RGUKT</option>
+ 					</select></td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>	
+ 				</tr>
+				<tr><td class="lab">Payment type:</td></tr>
+				<tr><td><select id="pt">
+					<option>DD Number</option>
+					<option>Account Number</option>
+				</select><input id="ptv" type="text" name="pt" placeholder="Enter your DD Number or Account Number"></td></tr>
+				<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+				<tr><td class="lab">Type of Accomidation:
+					<input type="radio" name="in" id="in" onfocus="totalCost();">INUZVID
+					<input type="radio" name="in" id="is"  onfocus="totalCost();">ISKLM
+					<input type="radio" name="in" id="ik" onfocus="totalCost();">IKADAPA
+					<input type="radio" name="in" id="io" onfocus="totalCost();">IONGOLE</td>
+					</tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+					<tr><td class="lab">Services Required:
+						<input type="checkbox" name="sr">Break
+						<input type="checkbox" name="sr">Lunch
+						<input type="checkbox" name="sr">Snacks
+						<input type="checkbox" name="sr">Tea
+						<input type="checkbox" name="sr">Coffee
+						<input type="checkbox" name="sr">Eggs</td>
+					</tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+ 					<tr><td class="lab">Number of Days Staying :<input type="number" placeholder="Enter how many days you wanna stay" name="nod" id="nod" onkeyup="totalCost();"></td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+ 					<tr><td class="lab">Total Cost :<input type="number" placeholder="Total Cost you have to pay" name="tc" id="tc" readonly></td></tr>
+					<tr><td><input type="reset" id="rst" name=""></td></tr>
+					<tr><td><input type="submit" name="s" value="Submit" class="button"></td></tr>	
+				</table>
+			</form>
+		</center>
+	</div>	
+	<script type="text/javascript">
+		function change(){
+			document.getElementById("main-head").style.backgroundColor="green";
+			document.getElementById("heading").style.color="yellow";
+			document.getElementById("sub-head").style.color="yellow";
+		}
+		function unchange(){
+			document.getElementById("main-head").style.backgroundColor="steelblue";
+			document.getElementById("heading").style.color="white";
+			document.getElementById("sub-head").style.color="red";
+		}
+		function LtoU() {
+			fn=document.getElementById("first").value;
+			document.getElementById("first").value=fn.toUpperCase();
+		}
+
+		function Condition1(){
+			fn=document.getElementById("first").value;
+			var pat=/^[F,f]/;
+			if((fn.length>=3) && (fn.length<=9) && pat.test(fn) ){
+				// alert(pat.test(fn));
+				return true;
+			}
+			else{
+				document.getElementById("first").style.border="2px solid red";
+				document.getElementById("namee").style.display="block";
+				return false;
+			}
+		}
+		
+		function Condition2()
+		{
+			var pt=document.getElementById("pt").value;
+			var ptv=document.getElementById("ptv").value;
+			if(pt=="DD Number"){
+				var p1=/^(SBIN)/;
+				if((ptv.length==8) && (p1.test(ptv))){
+					return true;
+				}
+				else{
+					return false;
+				}
+			}
+			else if(pt=="Account Number"){
+				var p2=/[\d]{11}/;
+				if(ptv.length==11 && p2.test(ptv)){
+					return true;
+				}
+				else{
+					return false;
+				}
+
+			}
+			else
+			{
+				document.getElementById("ptv").style.border="2px solid red"
+				return false;
+			}
+		}
+
+		function country(){
+			var c=document.getElementById("country").value;
+			if((c!="India") && c!="firm representatives of RGUKT"){
+				var beer=confirm("Do you require Beer?");
+			}
+		}
+
+		var i=0;
+		var a=["1.jpg","2.jpg","3.jpg","4.jpg"];
+		function bg(){
+			
+			document.body.style.backgroundImage="url("+a[i]+")";
+			i=(i+1)%4;
+		}
+		setInterval(bg,1000);
+
+		function Mobile()
+		{
+			var mnum=document.getElementById("mobile").value;
+			var p1=/^(977)[0-9]{7}$/;
+			var p2=/^[0-9]{4}\-[0-9]{4}\-[0-9]{4}$/;
+			if(p1.test(mnum)||p2.test(mnum))
+			{
+				return true;
+			}
+			else
+			{
+				document.getElementById("mobile").style.border="2px solid red";
+				document.getElementById("mb").style.display="block";
+				return false;
+			}
+		}
+		
+		function validateEmail()
+		{
+			var email=document.getElementById("email").value;
+			var pat=/^[a-z,A-Z,0-9][a-z,A-Z,0-9,_,.]*@[a-z]{3,7}\.[a-z]{2,3}(\.[a-z]{2,3})*$/;
+			if(pat.test(email))
+			{
+				return true;
+			}
+			else
+			{
+				document.getElementById("mail").style.display="block";
+				document.getElementById("email").style.borderColor="red";
+				return false;
+			}
+		}
+		function totalCost(){
+			var nod=document.getElementById("nod").value;
+			var tn=document.getElementById("in").checked;
+			var ts=document.getElementById("is").checked;
+			var tk=document.getElementById("ik").checked;
+			var to=document.getElementById("io").checked;
+			if(tn || tk){
+				document.getElementById("tc").value=2000*nod;
+			}
+			else if(ts||to){
+				document.getElementById("tc").value=3000*nod;
+			}
+
+		}
+	
+		function validate()
+		{
+			var res1=Condition1();
+			var res2=Condition2();
+			var res3=validateEmail();
+			country();
+			var res4=Mobile();
+			var res=res1&&res2&&res3&&res4;
+			return res;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN PAGE</title>
+	<style type="text/css">
+		.bold{
+			font-weight: bold;
+		}
+		button {
+			background-color: #04AA6D;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		input[type=text], input[type=password] {
+			width: 400px;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: 1px solid #ccc;
+		}
+		.right{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<center><img src="account.png" width="100px" height="100px" style="display: block;"><br>
+		<div>
+			<table>
+				<form action="janu.php" method="set" onsubmit="return validate();">
+					<h1>Faculty Login Page</h1>
+					<tr><td class="bold">Username:</td></tr>
+					<tr><td><input placeholder="Enter your ID" type="text" id="idnum" required></td></tr>
+					<tr><td id="idn" style="display:none; color: red;">Invalid ID Number...Please try agian</td></tr>	
+ 					<tr><td class="bold">Password:</td></tr>
+ 					<tr><td><input type="password" placeholder="Enter your password" id="password" required></td></tr>
+ 					<tr><td id="psd" style="display:none; color: red;">Password should contain Uppercase,<br>Lowercase letters,numbers and a special character</td></tr>
+ 					<tr><td><button class="submit" type="submit">LOGIN</button></td></tr>
+ 					<tr><td class="right"><a href="#">Forgot password</a></td></tr>
+ 				</form>
+ 			</table>
+		</div>
+	</center>
+	<script type="text/javascript">
+		var re=/^(F|f|)\d{3}$/;
+		function idNumber(){
+			var idnum=document.getElementById("idnum").value;
+			if(re.test(idnum)){
+				return true;
+			}
+			else{
+				document.getElementById("idn").style.display="block";
+				document.getElementById("idnum").style.borderColor="red";
+				return false;
+			}
+		}
+		var re1=/[a-z]/;
+		var re2=/[A-Z]/;
+		var re3=/[0-9]/;
+		var re4=/@/;
+		function password(){
+			var pass=document.getElementById("password").value;
+			// console.log(pass);
+			// console.log(pass.length);
+			if(pass.length>=6)
+			{
+				if(re1.test(pass))
+				{	
+					if(re2.test(pass))
+					{
+						if(re3.test(pass))
+						{
+							if(re4.test(pass))
+							{
+								return true;
+							}
+							else
+							{
+								document.getElementById("psd").style.display="block";
+								document.getElementById("password").style.borderColor="red";
+								return false;
+							}
+						}
+						else
+						{
+							document.getElementById("psd").style.display="block";
+							document.getElementById("password").style.borderColor="red";
+							return false;
+						}
+					}
+					else
+					{
+						document.getElementById("psd").style.display="block";
+						document.getElementById("password").style.borderColor="red";
+						return false;
+					}
+				}
+				else
+				{
+					document.getElementById("psd").style.display="block";
+					document.getElementById("password").style.borderColor="red";
+					return false;
+				}
+			}
+			else
+			{
+				document.getElementById("psd").style.display="block";
+				document.getElementById("password").style.borderColor="red";
+				return false;
+			}
+		}
+		function validate(){
+			var res1=idNumber();
+			var res2=password();
+			return(res1&&res2);
+		}
+	</script>
+</body>
+</html>

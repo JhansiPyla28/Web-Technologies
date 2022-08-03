@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MyWebsite</title>
+	<link rel="icon" type="text/css" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="MyWeb.css">
+</head>
+<body id="body">
+	<a href="#top" id="top"></a>
+	<header id="main-header">
+		<div id="images">
+		<img src="Jimmy.jpg" alt="JHANSI PYLA" width="60px" id="image" height="60px" title="JHANSI PYLA"  onmouseover="change();" onmouseout="unchange();">
+		</div>
+		<img src="more.png" id="image1" width="30px" height="30px" onclick="showMenu();" onclick="changeagain();" style= "display: inline;">
+		<div class="sidenav" >
+			<ul>
+				<li><a href="#">&#x1F3E0;</a></li>
+				<li class="ddown"><a href="#"><span>&lsaquo;</span>EXAM&#128214;</a>
+					<ul class="sub">
+						<li><a href="Login.html" target="home">LOGIN</a></li>
+						<li><a href="Register.html" target="home">REGISTER</a></li>
+					</ul>
+				</li>
+				<li class="ddown"><a href="#"><span>&lsaquo;</span>BRANCHES</a>
+					<ul class="sub">
+					<li><a href="#">ECE</a></li>
+					<li><a href="#">MECH</a></li>
+					<li class="ddown_two"><a href="#"><span>&lsaquo;</span>CSE</a>
+						<ul class="sub">
+							<li class="ddown_three"><a href="#"><span>&lsaquo;</span>STUDENTS</a>
+								<ul class="sub">
+									<li><a href="Login.html" target="home">LOGIN</a></li>
+									<li><a href="Register.html" target="home">REGISTER</a></li>
+								</ul>
+							</li>
+							<li class="ddown_four"><a href="#"><span>&lsaquo;</span>FACULTY</a>
+								<ul class="sub">
+									<li><a href="FacultyLogin.html" target="home">LOGIN</a></li>
+									<li><a href="FacultyRegiser.html" target="home">REGISTER</a></li>
+								</ul>
+							</li>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				</li>
+				<li><a href="Contact.html" target="home">CONTACT US&#128222;</a></li>
+			</ul>
+		</div>	
+		<hgroup>
+			<h1 style=" display: inline;">My Website</h1><br>
+			<h3 style=" display: inline;">Developed by Jhansi</h3>
+		</hgroup>
+	</header>
+	<div class="topnav">
+		<ul class="mainMenu">
+        <li><a href="Home.html" target="home">&#x1F3E0;</a></li>
+        <li><a href="#" style="padding-right: 25px; padding-left: 25px;">EXAM&#128214;</a>
+        	<ul class="subMenu">
+        		<li><a href="Login.html" target="home">LOGIN</a></li>
+        		<li><a href="Register.html" target="home">REGISTER</a></li>
+        	</ul>
+        </li>
+        <li><a href="#">BRANCHES</a>
+         <ul class="subMenu">
+             <li><a href="#">ECE</a></li>
+             <li><a href="#">MECH</a></li>
+             <li><a href="#">CSE</a>
+                 <ul class="SuperSubMenu">
+                     <li><a href="#">FACULTY</a>
+                     	<ul class="SuperSubMenu">
+                             <li><a href="FacultyLogin.html" target="home">LOGIN</a></li>
+                             <li><a href="FacultyRegiser.html" target="home">REGISTER</a></li>
+                          </ul>
+                     </li>
+                     <li><a>STUDENTS</a>
+                         <ul class="SuperSubMenu">
+                             <li><a href="Login.html" target="home">LOGIN</a></li>
+                             <li><a href="Register.html" target="home">REGISTER</a></li>
+                          </ul>
+                     </li>
+                </ul>
+            </li>
+        </ul>       
+        <li><a href="Contact.html" target="home">CONTACT US&#128222;</a></li>
+	</div>
+
+	<div >
+		<iframe frameborder="no" src="Home.html" height="600px" width="100%" name="home">
+		</iframe>
+	</div>
+	
+
+	<footer id="footer">
+		<p><small>Copyrights &copy; 2022 Website by Jhansi Pyla</small></p>
+		<div class="foot">
+			Viewcount:
+			<!-- <img src="https://hitwebcounter.com/counter/counter.php?page=8003765&style=0011&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /> -->
+		</div>
+	</footer>
+	<div>
+		<a href="#top"><img class="gototop" title="Go to top" src="uparrow.png" height="50" width="50"></a>
+	</div>
+	<script type="text/javascript" src="MyWeb.js"></script>
+</body>
+</html>

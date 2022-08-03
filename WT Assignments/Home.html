@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="MyWeb.css">
+	<style >
+		body{
+			overflow-y: hidden;
+			
+		}
+		#right{
+			overflow-x: hidden;
+		}
+		#home{
+			margin:-8px;
+		}
+	</style>
+</head>
+<body>
+	<div id="home">
+		<div class="left" style="background-color:#bbb;">
+    		<h2>Search Menu</h2>
+    		<input type="text" id="mySearch" onkeyup="searchIt()" placeholder="Search.." title="What do you want bro?">
+    		<ul id="myMenu">
+      			<li><a href="#">Kakinada</a></li>
+      			<li><a href="#">Samalkota</a></li>
+      			<li><a href="#">Srikakulam</a></li>
+      			<li><a href="#">Vishakapatnam</a></li>
+      			<li><a href="#">Vijayawada</a></li>
+      			<li><a href="#">Kurnool</a></li>
+      			<li><a href="#">Hyderabad</a></li>
+      			<li><a href="#">Banglore</a></li>
+      			<li><a href="#">USA</a></li>
+    		</ul>
+  		</div>
+
+
+		<div id="center">
+
+			<div class="mySlides fade">
+	  			<div class="numbertext">1 / 7</div>
+  				<img src="i1.jpg" width="100%" height="480px">
+  				<div class="text">Image one</div>
+			</div>
+
+			<div class="mySlides fade">
+		  	  	<div class="numbertext">2 / 7</div>
+		    	<img src="i2.jpg" width="100%" height="480px">
+		  		<div class="text">Image Two</div>
+			</div>
+
+			<div class="mySlides fade">
+		  		<div class="numbertext">3 / 7</div>
+		  		<img src="i3.jpg" width="100%" height="480px">
+		  		<div class="text">Image Three</div>
+			</div>
+			<div class="mySlides fade">
+	  			<div class="numbertext">4 / 7</div>
+  				<img src="i4.jpg" width="100%" height="480px">
+  				<div class="text">Image four</div>
+			</div>
+
+			<div class="mySlides fade">
+		  	  	<div class="numbertext">5 / 7</div>
+		    	<img src="i5.jpg" width="100%" height="480px">
+		  		<div class="text">Image five</div>
+			</div>
+
+			<div class="mySlides fade">
+		  		<div class="numbertext">6 / 7</div>
+		  		<img src="i6.jpg" width="100%" height="480px">
+		  		<div class="text">Image six</div>
+			</div>
+			<div class="mySlides fade">
+		  		<div class="numbertext">7 / 7</div>
+		  		<img src="i7.jpg" width="100%" height="480px">
+		  		<div class="text">Image seven</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			<div style="text-align:center">
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(3)"></span>
+  				<span class="dot" onclick="currentSlide(4)"></span> 
+  				<span class="dot" onclick="currentSlide(5)"></span> 
+  				<span class="dot" onclick="currentSlide(6)"></span>
+  				<span class="dot" onclick="currentSlide(7)"></span>  
+			</div>
+
+		</div>
+ 
+		<div id="right">
+			<h2>Notification Menu</h2>
+			<p>☛Lamb's ton helps England make light work of chase England Women clinched the first ODI against South Africa Women by a comfortable margin of five wickets</p>
+			<p> ☛Kohli in doubt for opening ODI against England The star batsman has a groin niggle and a decision on his participation will be taken on the morning of the first ODI </p>
+			<p>☛Rana, Taniya, Harleen in India squad for Commonwealth Games Simran Bahadur, Richa Ghosh and Poonam Yadav make way for the incoming trio</p>
+			<p> ☛It's a good reality check for people touring over here - Pat Cummins The Australia Test skipper said his team will 'take a lot of lessons' from their loss in the second Test against Sri Lanka when they travel to India next year </p>
+			<p>☛India look to expand batting blueprint to ODIs against England: The hosts will be strengthened the return of Ben Stokes, Joe Root and Jonny Bairstow, and hope to start the ODI series on a better note than T20Is</p>
+			<p>☛He plays for Delhi in domestic cricket and Royal Challengers Bangalore in the Indian Premier League as a right-handed batsman. </p>
+			<p>☛Zimbabwe trounce Singapore in tournament opener, USA ease past Jersey Sikandar Raza and Sean Williams set up Zimbabwe's 111-run win against Singapore while Steven Taylor's maiden ton powered the USA to a convincing win over Jersey</p>
+			<p> ☛On road to T20 World Cup: Subplots for India from England series What the three matches against England taught India in the lead-up to the T20 World Cup in Australia </p>
+		</div>
+	</div>
+	<script type="text/javascript" src="MyWeb.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DisplayDayDate</title>
+</head>
+<body>
+	<h3 id="result1"></h3>
+	<h3 id="result2"></h3>
+	<script type="text/javascript">
+		function display(){
+			var today = new Date();  
+			var day = today.getDay();  
+			var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];  
+			var hour = today.getHours();
+			var session="AM";
+			if(hour==0)
+				{
+					hour=12;
+				}
+				if(hour>12)
+				{
+					hour=hour-12;
+					session="PM"
+				}
+				 
+			var minute = today.getMinutes();  
+			var second = today.getSeconds();
+			hour=(hour<10)?"0"+hour:hour;
+			minute=(minute<10)?"0"+minute:minute;
+			second=(second<10)?"0"+second:second;
+			var thisday="Today is " +daylist[day] ;
+			document.getElementById("result1").innerText=thisday;
+			var time="Current Time is : "+hour+""+session+ ":"+minute+":"+second;
+			document.getElementById("result2").innerText=time;
+			setTimeout(display,1000); 
+		}
+		display();
+	</script>
+</body>
+</html>

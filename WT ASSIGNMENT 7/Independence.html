@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Independence</title>
+</head>
+<body>
+	<h3 id="result"></h3>
+	<script type="text/javascript">
+		var today=new Date();
+		var aug15=new Date(today.getFullYear(), 7, 15);
+		if (today.getMonth()==7 && today.getDate()>15) 
+		{
+			aug15.setFullYear(aug15.getFullYear()+1); 
+		}  
+		var one_day=1000*60*60*24;
+		var res=Math.ceil((aug15.getTime()-today.getTime())/(one_day))+" days left to Independence Day";
+		document.getElementById("result").innerText=res;
+	</script>
+</body>
+</html>
