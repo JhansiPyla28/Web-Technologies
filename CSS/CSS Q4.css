@@ -1,0 +1,243 @@
+body{
+	height: 4000px;
+	width: 99%;
+	background-color: black;
+	color: white;
+}
+hgroup{
+	text-align: right;
+	font-family: verdana;
+	padding-right: 15px;  
+	margin-right: 30px;
+	border-right: 10px solid white;
+}
+h1{
+	font-size: 1.93rem;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+h3{
+	font-size: 1.13rem;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#footer{
+	background-color: darkred;
+	color: #FFFFFF;
+	width: 99%;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 10px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+footer p{
+	margin-top: 0px;
+	padding: 8px;
+	display: inline;
+}
+div.foot{
+	float: right;
+	margin-right: 10px;
+	
+}
+.mainhead{
+	text-align: center;
+	text-align: center;
+	margin-top: 0px;
+	text-shadow: 3px 2px red;
+	font-family: Lucida Calligraphy;
+	font-size: 50px;
+	font-style: italic;
+}
+.sec{
+	padding: 20px;
+	border-radius: 10px;
+	background-color: black;
+}
+label{
+	padding: 10px 10px 10px 10px;
+	display: inline-block;
+}
+.formlabel{
+	width: 20%;
+	float: left;
+	margin-top: 8px;
+	font-size: 20px;
+}
+.formcontrol{
+	width: 75%;
+	float: left;
+	margin-top: 18px;
+}
+.sec input[type=text],input[type=password],input[type=number],input[type=email]{
+	padding: 10px;
+	border-radius: 4px;
+	border: 1ps solid white;
+	width: 100%;
+}
+select{
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid white;
+	display: inline;
+}
+.row:after{
+	content: " ";
+	clear: both;
+	display: table;
+}
+.s{
+	color: white;
+	background-color: darkgray;
+	padding: 10px 16px;
+	margin-right: 5px;
+	border-radius: 4px;
+	float: right;
+	cursor: pointer;
+}
+.s:hover{
+	background-color: seagreen;
+}
+input[type=text]:disabled{
+	background-color: steelblue;
+}
+input[type=text]:focus{
+	background-color: lemonchiffon;
+	border-color: red;
+}
+input:checked{
+	height: 30px;
+	width: 30px;
+}
+input:out-of-range{
+	background-color: red;
+}
+input:in-range{
+	background-color: lightgreen;
+}
+input:valid{
+	background-color: #658419;
+}
+input:invalid{
+	background-color: red;
+}
+ input:optional{
+ 	background-color: orange;
+ }
+  input:required{
+  	background-color: burlywood;
+  }
+.horizontalzebra,.horizontalzebra th,.horizontalzebra td{
+	border: 1px solid white;
+	/*width: 50%;*/
+	border-collapse: collapse;
+	margin: 20px;
+}
+.horizontalzebra th{
+	height: 35px;
+	width: 250px;
+}
+.horizontalzebra td{
+	padding: 0px;
+	height: 45px;
+	text-align: center;
+}
+.horizontalzebra tr:nth-child(even){
+	background-color: darkgray;
+}
+.horizontalzebra td:hover{
+	background-color: hotpink;
+	color: black;
+}
+.boxtable,.boxtable th,.boxtable td{
+	border: 1px solid white;
+	/*width: 50%;*/
+	border-collapse: collapse;
+	margin: 20px;
+}
+.boxtable th{
+	height: 35px;
+	width: 250px;
+}
+.boxtable td{
+	padding: 0px;
+	height: 45px;
+	text-align: center;
+}
+.verticalzebra,.verticalzebra th,.verticalzebra td{
+	border: 1px solid white;
+	/*width: 50%;*/
+	border-collapse: collapse;
+	margin: 20px;
+}
+.verticalzebra th{
+	height: 35px;
+	width: 250px;
+}
+.verticalzebra td{
+	padding: 0px;
+	height: 45px;
+	text-align: center;
+}
+.verticalzebra th:nth-child(even),.verticalzebra td:nth-child(even){
+	background-color: darkgray;
+}
+.verticalzebra td:hover{
+	background-color: hotpink;
+	color: black;
+}
+.columnemphasis,.columnemphasis th,.columnemphasis td{
+	border: 1px solid white;
+	/*width: 50%;*/
+	border-collapse: collapse;
+	margin: 20px;
+}
+.columnemphasis th{
+	height: 35px;
+	width: 250px;
+}
+.columnemphasis td{
+	padding: 0px;
+	height: 45px;
+	text-align: center;
+}
+.columnemphasis th:nth-child(1){
+	background-color: darkgray;
+}
+.columnemphasis td:hover{
+	background-color: hotpink;
+	color: black;
+}
+.backgroundimage,.backgroundimage th,.backgroundimage td{
+	border: 1px solid white;
+	/*width: 50%;*/
+	border-collapse: collapse;
+	margin: 20px;
+}
+.backgroundimage th{
+	height: 35px;
+	width: 250px;
+}
+.backgroundimage td{
+	padding: 0px;
+	height: 45px;
+	text-align: center;
+}
+.backgroundimage{
+	background-image: url('bg.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+

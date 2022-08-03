@@ -1,0 +1,18 @@
+
+.main{
+	background-color: darkcyan;
+	margin: 10px;
+	padding: 20px;
+	height: 1500px;
+}
+.sub,.sub3{
+	background-color: lightcyan;
+	color: gray;
+	padding: 5px;
+}
+.sub3{
+	position: relative;
+	top: 300px;
+
+
+}

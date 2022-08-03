@@ -1,0 +1,249 @@
+h2{
+	font-family: stencil;
+}
+body{
+	background-color: #f3f3f3;
+	text-align: center;
+}
+h1{
+	border-bottom: 2px solid black;
+	font-family: Lucida Calligraphy;
+}
+.first{
+	text-align: center;
+	border: 1px solid black;
+	margin: 50px;
+	margin-left: 450px;
+	padding: 50px;
+	width: 25%;
+	border-radius: 100px;
+}
+.second{
+	text-align: center;
+	border: 1px solid black;
+	margin: 50px;
+	margin-left: 450px;
+	padding: 50px;
+	width: 25%;
+	border-radius: 50px;
+}
+.third{
+	text-align: center;
+	border: 1px solid black;
+	margin: 50px;
+	margin-left: 450px;
+	padding: 50px;
+	width: 25%;
+	border-radius: 50px 10px;
+}
+.fourth{
+	text-align: center;
+	border: 1px solid black;
+	margin: 50px;
+	margin-left: 450px;
+	padding: 50px;
+	width: 25%;
+	border-radius: 10px 50px;
+}
+.fifth{
+	width: 25%;
+	text-align: center;
+	border: 1px solid black;
+	margin: 50px;
+	margin-left: 450px;
+	padding: 50px;
+	border-radius: 10%;
+}
+.sixth{
+	width: 25%;
+	text-align: center;
+	border: 1px solid black;
+	margin: 50px;
+	margin-left: 450px;
+	padding: 50px;
+	border-radius: 50%;
+}
+.one{
+	border: 1px solid black;
+	padding: 50px;
+	width: 50%;
+	margin-left: 300px;
+	box-shadow: 10px 10px black ;
+}
+.two{
+	border: 1px solid black;
+	padding: 50px;
+	width: 50%;
+	margin-left: 300px;
+	box-shadow: 10px 10px #876546;
+}
+.three{
+	border: 1px solid black;
+	padding: 50px;
+	margin-left: 300px;
+	width: 50%;
+	box-shadow: 10px 10px blue;
+}
+.four{
+	border: 1px solid black;
+	padding: 50px;
+	margin-left: 300px;
+	width: 50%;
+	box-shadow: 50px 50px grey;
+}
+.five{
+	border: 1px solid black;
+	padding: 50px;
+	margin-left: 300px;
+	width: 50%;
+	box-shadow: 20px 20px 20px grey ;
+}
+.six{
+	border: 1px solid black;
+	padding: 50px;
+	margin-left: 300px;
+	width: 50%;
+	box-shadow: 20px 20px 50px 50px grey ;
+}
+.seven{
+	border: 1px solid black;
+	padding: 50px;
+	margin-left: 300px;
+	width: 50%;
+	box-shadow: 20px 20px 50px 50px pink inset;
+}
+.eight{
+	border: 1px solid black;
+	padding: 50px;
+	width: 50%;
+	margin-left: 300px;
+	box-shadow: 20px 20px 20px 20px red;
+	margin-bottom: 100px;
+}
+.s1{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(purple,lightcyan);	
+}
+.s2{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(to right,purple,lightcyan);	
+}
+.s3{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(to bottom right,purple,lightcyan);	
+}
+.s4{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(0deg, purple, lightcyan);
+}
+.s5{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(90deg, purple, lightcyan);
+}
+.s6{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(180deg, purple, lightcyan);
+}
+.s7{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(-90deg, purple, lightcyan);
+}
+.s8{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(purple, lightcyan,pink);
+}
+.s9{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);	
+}
+.s10{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	  background-image: repeating-linear-gradient(purple, lightcyan 10%, green 20%);	
+}
+.r1{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: radial-gradient(pink, lightcyan ,hotpink);	
+}
+.r2{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: radial-gradient(pink 5%, lightcyan 15% ,hotpink 60%);	
+}
+.r3{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+	background-image: radial-gradient(circle, purple, lightcyan, hotpink);	
+}
+.r4{
+	border: 1px solid black;
+	padding: 100px;
+	width: 50%;
+	margin-left: 250px;
+  background-image: repeating-radial-gradient(lightcyan, purple 10%, hotpink 15%);
+}
+.sec1{
+	background: url(rgukt.png) left top no-repeat, url(bg4.jpg) right bottom no-repeat, url(bg6.jpg) left top repeat;
+	background-size: 100px, 250px, auto;
+ 	padding-top: 20px;
+ 	padding-bottom: 50px;
+ 	color: black;
+ 	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

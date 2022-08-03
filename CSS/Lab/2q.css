@@ -1,0 +1,38 @@
+.B{
+	background-color: white;
+
+}
+.main{
+	background-color: ghostwhite;
+	padding: 20px;
+	border: 2px solid darkcyan;
+	width: 1000px;
+	height: 1000px;
+	margin-top: 50px;
+	margin-left: 150px;
+
+}
+.sub1 {
+	background-color: black;
+	color: white;
+}
+.sub2 {
+	background-color: black;
+	padding: 20px;
+	color: white;
+	
+}
+.sub3 {
+	background-color: black;
+	padding: 20px;
+	border: 5px solid red;
+	color: white;
+	
+}
+.sub4 {
+	background-color: black;
+	padding: 20px;
+	border: 4px solid red;
+	margin: 3px;
+	color: white;
+}

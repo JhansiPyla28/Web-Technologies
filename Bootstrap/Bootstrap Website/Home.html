@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="bootstrapWebsite.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<style >
+		body{
+			overflow-y: hidden;
+		}
+		#right{
+			overflow-x: hidden;
+		}
+		#home{
+			margin:-8px;
+		}
+	</style>
+</head>
+<body>
+	<div id="home">
+		<div class="left" style="background-color:#bbb;">
+    		<h2>Search Menu</h2>
+    		<input type="text" id="mySearch" onkeyup="searchIt()" placeholder="Search.." title="What do you want bro?">
+    		<ul id="myMenu">
+      			<li><a href="#">Kakinada</a></li>
+      			<li><a href="#">Samalkota</a></li>
+      			<li><a href="#">Srikakulam</a></li>
+      			<li><a href="#">Vishakapatnam</a></li>
+      			<li><a href="#">Vijayawada</a></li>
+      			<li><a href="#">Kurnool</a></li>
+      			<li><a href="#">Hyderabad</a></li>
+      			<li><a href="#">Banglore</a></li>
+      			<li><a href="#">USA</a></li>
+    		</ul>
+  		</div>
+  		<div id="center" style="width: 55%;" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="bg.jpg"  width="100%" height="550">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="bg1.jpg" width="100%" height="550">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="bg3.jpg" width="100%" height="550">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		<div id="right">
+			<h2>Notification Menu</h2>
+			<marquee direction="up">
+				<p>☛Lamb's ton helps England make light work of chase England Women clinched the first ODI against South Africa Women by a comfortable margin of five wickets</p>
+			</marquee>
+			<marquee direction="up">
+				<p> ☛Kohli in doubt for opening ODI against England The star batsman has a groin niggle and a decision on his participation will be taken on the morning of the first ODI </p>
+			</marquee>
+			<marquee direction="up">
+				<p>☛Rana, Taniya, Harleen in India squad for Commonwealth Games Simran Bahadur, Richa Ghosh and Poonam Yadav make way for the incoming trio</p>
+			</marquee>
+			<marquee direction="up">
+				<p> ☛It's a good reality check for people touring over here - Pat Cummins The Australia Test skipper said his team will 'take a lot of lessons' from their loss in the second Test against Sri Lanka when they travel to India next year </p>
+			</marquee>
+			<marquee direction="up">
+				<p>☛India look to expand batting blueprint to ODIs against England: The hosts will be strengthened the return of Ben Stokes, Joe Root and Jonny Bairstow, and hope to start the ODI series on a better note than T20Is</p>
+			</marquee>
+			<marquee direction="up">
+				<p>☛He plays for Delhi in domestic cricket and Royal Challengers Bangalore in the Indian Premier League as a right-handed batsman. </p>
+			</marquee>
+			<marquee direction="up">
+				<p>☛Zimbabwe trounce Singapore in tournament opener, USA ease past Jersey Sikandar Raza and Sean Williams set up Zimbabwe's 111-run win against Singapore while Steven Taylor's maiden ton powered the USA to a convincing win over Jersey</p>
+			</marquee>
+			<marquee direction="up">
+				<p> ☛On road to T20 World Cup: Subplots for India from England series What the three matches against England taught India in the lead-up to the T20 World Cup in Australia </p>
+			</marquee>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function searchIt() 
+		{
+			var input, filter, ul, li, a, i;
+  			input = document.getElementById("mySearch");
+  			filter = input.value.toUpperCase();
+  			ul = document.getElementById("myMenu");
+  			li = ul.getElementsByTagName("li");
+  			for (i = 0; i < li.length; i++) 
+  			{
+    			a = li[i].getElementsByTagName("a")[0];
+    			if (a.innerHTML.toUpperCase().indexOf(filter) > -1) 
+    		{
+      			li[i].style.display = "";
+    		}
+    		else 
+    		{
+      			li[i].style.display = "none";
+    		}
+  		}
+	}
+	</script>
+</body>
+</html>

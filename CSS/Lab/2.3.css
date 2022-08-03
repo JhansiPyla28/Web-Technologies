@@ -1,0 +1,56 @@
+.one,.two,.three{
+	margin: 50px;
+	border: 2px;
+	background: darkcyan;
+	height: auto;
+	width: auto;
+}
+.img1{
+	margin-left: 50px;
+	width: 30%;
+	height: 200px;
+	background-color: gray;
+	padding: 10px;
+	border: 1px solid black;
+	margin: 2px;
+}
+.img2{
+	width: 30%;
+	height: 200px;
+	background-color: gry;
+	background-color: gray;
+	padding: 10px;
+	border: 1px solid black;
+	margin-left: 20px;
+}
+.img3{
+	width: 30%;
+	height: 200px;
+	background-color: gray;
+	background-color: gray;
+	padding: 10px;
+	border: 1px solid black;
+	margin-left: 20px;
+}
+p{
+	display: inline;
+}
+.c1{
+	position: relative;
+	left: 100px;
+	color: red;
+	font-size: 25px;
+
+}
+.c2{
+	position: relative;
+	left: 400px;
+	color: orange;
+	font-size: 25px;
+}
+.c3{
+	position: relative;
+	left: 670px;
+	color: yellow;
+	font-size: 25px;
+}

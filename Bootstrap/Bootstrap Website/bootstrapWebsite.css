@@ -1,0 +1,100 @@
+#body{
+	width: 99%;
+	/*height: 2000px;*/
+	background-image: linear-gradient(white,pink,white);
+}
+#main-header{
+	margin-top: 0px;
+	width: 100%;
+	height: auto;
+	/*border: 1px solid black;*/
+}
+hgroup{
+	font-family: verdana;
+	padding-right: 15px;  
+	text-shadow: 5px 5px 10px gray;
+}
+#image{
+	float:left;
+	top: 0px;
+	left: 0px;
+}
+.left 
+{
+	float: left;
+  	width: 21%;
+  	padding: 15px 0;
+}
+
+.left h2 
+{
+  	padding-left: 8px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  	list-style-type: none;
+  	padding: 0;
+  	margin: 0;
+}
+
+#myMenu li a 
+{
+  	padding: 12px;
+  	text-decoration: none;
+  	color: black;
+  	display: block
+}
+
+#myMenu li a:hover 
+{
+  	background-color: #eee;
+}
+#center
+{
+	width: 54%;
+	height: auto;
+	/*border: 1px solid blue;*/
+	float: left;
+ 	position: relative;
+ 	margin: auto;
+}
+#right{
+	float: right;
+	width: 24%;
+	height: 500px;
+	/*border: 1px solid red;*/
+	overflow: scroll;
+}
+#footer{
+	background-color: darkred;
+	color: #FFFFFF;
+	width: 99%;
+	height: 30px;
+	padding: 5px;
+	padding-bottom: 10px;
+	position: fixed;
+	bottom: 0px;
+}
+footer p{
+	display: inline;
+	margin-left: 550px;
+}
+div.foot{
+	float: right;
+	margin-right: 10px;
+	
+}
+.gototop{
+	position: fixed;
+	bottom: 30px;
+	right: 0px;
+}

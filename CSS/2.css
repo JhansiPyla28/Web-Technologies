@@ -1,0 +1,10 @@
+.para{
+	border: 2px solid black;
+}
+.d{
+	width: 50%;
+	border: 2px solid red;
+	border-radius: 10px;
+	margin: 100px;
+	padding: 20px;
+}

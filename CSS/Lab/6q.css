@@ -1,0 +1,80 @@
+
+h2{
+	font-family: Lucida Calligraphy;
+}
+.image1{
+	margin-bottom: -10px;
+	margin-left: 50px;
+}
+.image2{
+	margin-bottom: -10px;
+	margin-left: 50px;
+}
+.image3{
+	margin-bottom: -10px;
+	margin-left: 50px;
+}
+.image4{
+	margin-bottom: -10px;
+	margin-left: 50px;
+}
+.image1:hover{
+	transform: translateX(400px);
+}
+
+.image2:hover{
+	margin-top: 100px;
+	transform: rotate(180deg);
+}
+
+.image3:hover{
+	transform: scale(1.5);
+}
+
+.image4:hover{
+	transform: skew(30deg);
+}
+.image5{
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-delay: 1s;
+	transition-timing-function: ease-in-out;
+	margin-bottom: -10px;	
+	margin-left: 50px;
+}
+.image5:hover{
+	background-color: powderblue;
+	transform: translateX(1000px) rotate(360deg);
+}
+.container{
+	width: 100%;
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.contain{
+	margin-bottom: 300px;
+}
+.lines{
+	border-bottom: 5px dashed;
+	height: 0px;
+	width: 100%;
+	position: absolute;
+	margin-bottom: 20px;
+}
+.sample{
+	animation: example 3s ease-in normal both;
+}
+@keyframes example{
+	from{
+		transform: translateX(-100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+		box-shadow: 1px 1px 1px white;
+	}
+	to{
+		transform: translateX(1020px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+	
+	}
+}
+.sample:hover{
+	animation-play-state: paused;
+}
